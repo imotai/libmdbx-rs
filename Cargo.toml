@@ -53,7 +53,14 @@ tempfile = "3"
 
 [features]
 cbor = ["ciborium"]
-orm = ["anyhow", "arrayref", "arrayvec", "impls", "tempfile"]
+orm = [
+    "anyhow",
+    "arrayref",
+    "arrayvec",
+    "derive_more/debug",
+    "impls",
+    "tempfile",
+]
 
 [[bench]]
 name = "cursor"

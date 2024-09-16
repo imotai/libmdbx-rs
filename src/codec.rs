@@ -1,5 +1,5 @@
 use crate::{error::mdbx_result, Error, TransactionKind};
-use derive_more::*;
+use derive_more::{Debug, Deref, DerefMut, Display};
 use std::{borrow::Cow, slice};
 use thiserror::Error;
 
